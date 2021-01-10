@@ -24,6 +24,14 @@ public class Exercise_02 {
     public static void main(String[] args) {
 
         // write code here
+        int num = 10;
+        double newNum = num;
+        System.out.println(newNum);
+
+        double num2 = 10.5;
+        int newNum2 = (int) num2;
+        System.out.println(newNum2);
+        //Information is lost when using narrow conversion and vice versa
 
     }
 }

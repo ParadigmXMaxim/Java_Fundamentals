@@ -17,7 +17,15 @@ public class Exercise_01 {
     public static void main(String[] args) {
 
         // write code here
+        int age = 31;
+        double pi = 3.14;
+        float taxRate = 6.5f;
+        char middleInitial = 'R';
 
+        System.out.println(age);
+        System.out.println(pi);
+        System.out.println(taxRate);
+        System.out.println(middleInitial);
     }
 }
 

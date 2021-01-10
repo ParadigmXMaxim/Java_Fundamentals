@@ -22,8 +22,16 @@ public class Exercise_07 {
         System.out.print("Enter a number in days between 1 and 1,000,000: ");
         // assign input to variable as int
         int days = scanner.nextInt();
+        while(days < 1 || days > 1_000_000){
+            System.out.println("Sorry, the number you entered is not in range. Please enter another number for " +
+                    "days between 1 and 1,000,000:");
+            days = scanner.nextInt();
+        }
 
         // write completed code here
+        int secInDay = 24 * 60 * 60;
+        int dayToSecs = days * secInDay;
+        System.out.println(days + " days is " + dayToSecs + " seconds");
 
     }
 }
