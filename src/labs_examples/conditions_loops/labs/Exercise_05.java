@@ -14,6 +14,24 @@ package labs_examples.conditions_loops.labs;
  *
  *
  */
-
+import java.util.Scanner;
 public class Exercise_05 {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a number to start at:");
+        int lowerBound = input.nextInt();
+        System.out.println("Enter a number to stop at:");
+        int upperBound = input.nextInt();
+
+        double sum = 0;
+        int count = 0;
+        for(int x = lowerBound; x <= upperBound; x++){
+            sum += x;
+            count++;
+        }
+
+        System.out.println("The sum is: " + sum);
+        double average = sum / count;
+        System.out.println("The average is: " + average);
+    }
 }
