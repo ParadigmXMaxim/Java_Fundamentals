@@ -9,5 +9,15 @@ package labs_examples.arrays.labs;
  */
 
 public class Exercise_04 {
+    public static void main(String[] args){
+        String[][] names = {{"William", "Blake"}, {"Monkey", "D", "Luffy"}, {"Id"}};
+
+        for(String[] name: names){
+            for(String identity:name){
+                System.out.print(identity + " ");
+            }
+            System.out.println();
+        }
+    }
 
 }

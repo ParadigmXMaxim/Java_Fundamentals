@@ -20,7 +20,12 @@ public class Exercise_06 {
         int temp;
 
         // Question: in the for loop below, why do we divide "nums.length" by 2?
+        //The reason that the length is divided by two is because you don't need to iterate over
+        //The entire list to reverse it.
         for(int i = 0; i < nums.length / 2; i++){
+            temp = nums[i];
+            nums[i] = nums[nums.length - (i + 1)];
+            nums[nums.length - (i + 1)] = temp;
             // swap elements at indexes in array
             // you have two indices readily available for you to use "i" (which increments) and "nums.length"
             // you've also got this "temp" variable you can use to hold a value temporarily
