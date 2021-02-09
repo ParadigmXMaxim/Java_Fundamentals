@@ -3,7 +3,9 @@ package labs_examples.objects_classes_methods.labs.oop.A_inheritance;
 /**
  * Why does the output print in the order it does?
  *
- * You answer:
+ * You answer: The reason that A, B, C is printed is because A is the parent to B and B is the parent
+ * to C because of this the parent default constructor is called first when created. Since C was
+ * the object created it inherits from B whom inherits from A thus A, B, C.
  *
  */
 

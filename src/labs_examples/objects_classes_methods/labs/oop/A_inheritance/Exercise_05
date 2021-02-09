@@ -27,3 +27,6 @@ class Child extends Parent
     System.err.println("Child called");
   }
 }
+
+Answer: When the new object is created the Parent constructor will be called first followed by the
+Child. So that means that Parent called is printed first and then on the next line Child called.

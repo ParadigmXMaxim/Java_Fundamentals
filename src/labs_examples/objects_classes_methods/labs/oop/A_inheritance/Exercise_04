@@ -27,3 +27,13 @@ class Child extends Parent
     System.err.println("Child called");
   }
 }
+
+Answer: The object c will print out "Parent called". The reason this happens is because a Parent
+object variable is created and initialized to Child object which extends Parent thus the Parent
+would call its method. I had to use System.err.println because I thought it was an err (pun intended)
+because I had never see it before. I will try this in an editor now to confirm my answer.
+
+Confirmation: After testing the code in an editor I realized that my answer is incorrect. I thought
+that because in the previous exercise (Exercise_02.java) when an object was created and you printed
+out the value it gave the Parent value not the child value. I need to study this some more before
+I fully understand why this happens.
