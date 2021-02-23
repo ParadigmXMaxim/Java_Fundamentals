@@ -12,7 +12,7 @@ class DtoS {
     public static void main(String args[]) {
         String s;
 
-        String filePath = "src/labs_examples/input_output/files/KtoD.txt";
+        String filePath = "C:/Users/Ian/Documents/CodingNomads/labs/online-java-fundamentals/src/labs_examples/input_output/files/KtoD.txt";
 
 
         // Create and use a FileReader wrapped in a BufferedReader.
