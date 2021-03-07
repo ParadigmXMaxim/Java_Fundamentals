@@ -18,7 +18,7 @@ public class Exercise_02{
 
         for(E value : arr){
             System.out.println(value);
-            total += value;
+
         }
         return total;
     }

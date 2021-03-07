@@ -7,4 +7,19 @@ package labs_examples.enumerations.labs;
  *      2) Create a parameterized enumeration that passes one or more values to it's constructor. Demonstrate the use
  *      of this enum from a seperate class.
  */
+public enum MaritalStatus{
+    SINGLE('S'),
+    MARRIED('M'),
+    DIVORCED('D'),
+    WIDOWED('W');
 
+    private final char abbreviation;
+    private MaritalStatus(char abbr){
+        this.abbreviation = abbr;
+    }
+
+    public char getAbbreviation(){
+        return this.abbreviation;
+    }
+
+}
